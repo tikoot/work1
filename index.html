@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link href="./dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#dee4e9]">
+    <!-- Navigation Menu -->
+    <nav class="py-6 px-14">
+        <ul class="flex items-center justify-between uppercase font-semibold navText">
+            <li class="flex"><a href="#" class="flex items-center"><img src="./img/grid.png" alt="" class="mr-2">Overview</a></li>
+            <li class="flex"><a href="#" class="flex items-center active"><img src="./img/add-user.png" alt="" class="mr-2">Subscribers</a></li>
+            <li class="flex"><a href="#" class="flex items-center"><img src="./img/sync.png" class="mr-2">Conversions</a></li>
+            <li class="flex"><a href="#" class="flex items-center"><img src="./img/exploration.png" class="mr-2">Analytics</a></li>
+            <li class="flex"><a href="#" class="flex items-center"><img src="./img/lightning.png" class="mr-2">Automations</a></li>
+            <li class="flex"><a href="#" class="flex items-center"><img src="./img/envelope.png" class="mr-2">Broadcasts</a></li>
+            <li class="flex"><a href="#" class="flex items-center"><img src="./img/settings.png" class="mr-2">Settings</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex">
+        <!-- Left Menu -->
+        <aside class=" pl-6 pt-6 w-1/6">
+            <ul class="navText">
+                <li class="mb-6"><a href="#" class="flex items-center active"><img src="./img/add-user.png" alt="" class="mr-2">Active</a></li>
+                <li class="mb-6"><a href="#" class="flex items-center"><img src="./img/refer.png" alt="" class="mr-2">Referrals</a></li>
+                <li class="mb-6"><a href="#" class="flex items-center"><img src="./img/checked.png" alt="" class="mr-2">Winners</a></li>
+                <li class="mb-6"><a href="#" class="flex items-center"><img src="./img/palm-of-hand.png" alt="" class="mr-2">High Risk</a></li>
+                <li class="mb-6"><a href="#" class="flex items-center"><img src="./img/export.png" alt="" class="mr-2">Import</a></li>
+            </ul>
+        </aside>
+
+        <!-- Center Content -->
+
+<main class="mt-2 mx-7 w-[80%] px-6 pt-5 pb-20 bg-white rounded">
+    <!-- Top Section with Text and Buttons -->
+    <div class="flex items-center justify-between mb-4">
+        <div>
+            <p class="font-semibold text-2xl navText">5 Subscribers</p>
+        </div>
+        <div class=" navText border rounded flex items-center">
+            <div class="border-r ">
+            <button class="px-4 py-2 flex items-center"><img src="./img/add-friend (1).png" class="mr-2">Add subscriber</button>
+            </div>
+        <div>
+            <button class="px-4 py-2  flex items-center"><img src="./img/import.png"  class="mr-2" alt="">Export</button>
+        </div>
+        </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="flex items-center border rounded py-3 px-3 mb-4 pl-">
+        <img src="./img/search.png" alt="Search" class="w-5 h-5 mr-2">
+        <input type="text" placeholder="Search by name, email or id" class="w-full outline-none focus:outline-none">
+    </div>
+
+
+
+    <!-- Table Header with Sorting and Per Page Selection -->
+    <div class="flex items-center justify-between mb-4 px-6 py-4 rounded bg-[#f5f7f9]">
+        <div class="flex justify-between">
+            <button class="navText mr-7 capitalize flex items-center"><img src="./img/check.png" class="w-4 h-4 mr-2">promote</button>
+            <button class="navText mr-7 capitalize  flex items-center"><img src="./img/delete-button.png" class="w-4 h-4 mr-2" alt="">delete</button>
+            <button class="navText capitalize  flex items-center"><img src="./img/envelope.png" class="w-4 h-4 mr-2" alt="">email</button>
+        </div>
+       
+        
+        
+        <div class="flex items-center">
+        <div class="flex items-center space-x-2 mr-8">
+         
+            <select class=" p-2 rounded border-2 capitalize">
+                <option value="date">registration date</option>
+                <option value="source">source</option>
+                <option value="ref">refferals</option>
+            </select>
+          
+        </div>
+        <div class="flex items-center  space-x-2">
+            <select class=" p-2 rounded border-2">
+                <option value="25">25 per page</option>
+                <option value="50">50 per page</option>
+                <option value="75">75 per page</option>
+            </select>
+        </div>
+    </div>
+    </div>
+
+    <!-- Table -->
+    
+<table class="w-full">
+    <thead class="vertical-line">
+        <tr class="uppercase">
+            <th class="border-b p-2 text-left"><input type="checkbox"></th>
+            <th class="border-b p-2 text-left">#</th>
+            <th class="border-b p-2 text-left">Subscriber</th>
+            <th class="border-b p-2 text-left">Date</th>
+            <th class="border-b p-2 text-left">Source</th>
+            <th class="border-b p-2 text-left">Ref?</th>
+            <th class="border-b p-2 text-left"># Referrals</th>
+            <!-- Add more table headers as needed -->
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td class=" border-b p-2 "><input type="checkbox"></td>
+            <td class="border-b p-2 ">5th</td>
+            <td class="border-b p-2 flex items-center">
+                <img src="./img/user.png" alt="Subscriber Image" class=" w-8 h-8 rounded-full mr-2">
+                <div>
+                Martin
+                <p class="navText">martin@example.com</p>
+            </div>
+            </td>
+            <td class="border-b p-2 ">Oct 17,2019</td>
+            <td class="border-b p-2 ">Direct Visit</td>
+            <td class="border-b p-2 "><button class="yes">Yes</button></td>
+            <td class="border-b p-2 ">2</td>
+            <!-- Add more table data as needed -->
+        </tr>
+
+        <tr>
+            <td class=" border-b p-2 "><input type="checkbox"></td>
+            <td class="border-b p-2 ">5th</td>
+            <td class="border-b p-2 flex items-center">
+                <img src="./img/user.png" alt="Subscriber Image" class=" w-8 h-8 rounded-full mr-2">
+                <div>
+                Martin
+                <p class="navText">martin@example.com</p>
+            </div>
+            </td>
+            <td class="border-b p-2 ">Oct 17,2019</td>
+            <td class="border-b p-2 ">Direct Visit</td>
+            <td class="border-b p-2 "><button class="no">No</button></td>
+            <td class="border-b p-2 ">2</td>
+            <!-- Add more table data as needed -->
+        </tr>
+        <tr>
+            <td class=" border-b p-2 "><input type="checkbox"></td>
+            <td class="border-b p-2 ">5th</td>
+            <td class="border-b p-2 flex items-center">
+                <img src="./img/user.png" alt="Subscriber Image" class=" w-8 h-8 rounded-full mr-2">
+                <div>
+                Martin
+                <p class="navText">martin@example.com</p>
+            </div>
+            </td>
+            <td class="border-b p-2 ">Oct 17,2019</td>
+            <td class="border-b p-2 ">Direct Visit</td>
+            <td class="border-b p-2 "><button class="no">No</button></td>
+            <td class="border-b p-2 ">2</td>
+            <!-- Add more table data as needed -->
+        </tr>
+        <tr>
+            <td class=" border-b p-2 "><input type="checkbox"></td>
+            <td class="border-b p-2 ">5th</td>
+            <td class="border-b p-2 flex items-center">
+                <img src="./img/user.png" alt="Subscriber Image" class=" w-8 h-8 rounded-full mr-2">
+                <div>
+                Martin
+                <p class="navText">martin@example.com</p>
+            </div>
+            </td>
+            <td class="border-b p-2 ">Oct 17,2019</td>
+            <td class="border-b p-2 ">Direct Visit</td>
+            <td class="border-b p-2 "><button class="no">No</button></td>
+            <td class="border-b p-2 ">2</td>
+            <!-- Add more table data as needed -->
+        </tr>
+        <tr>
+            <td class=" border-b p-2 "><input type="checkbox"></td>
+            <td class="border-b p-2 ">5th</td>
+            <td class="border-b p-2 flex items-center">
+                <img src="./img/user.png" alt="Subscriber Image" class=" w-8 h-8 rounded-full mr-2">
+                <div>
+                Martin
+                <p class="navText">martin@example.com</p>
+            </div>
+            </td>
+            <td class="border-b p-2 ">Oct 17,2019</td>
+            <td class="border-b p-2 ">Direct Visit</td>
+            <td class="border-b p-2 "><button class="no">No</button></td>
+            <td class="border-b p-2 ">2</td>
+            <!-- Add more table data as needed -->
+        </tr>
+        <tr>
+            <td class=" border-b p-2 "><input type="checkbox"></td>
+            <td class="border-b p-2 ">5th</td>
+            <td class="border-b p-2 flex items-center">
+                <img src="./img/user.png" alt="Subscriber Image" class=" w-8 h-8 rounded-full mr-2">
+                <div>
+                Martin
+                <p class="navText">martin@example.com</p>
+            </div>
+            </td>
+            <td class="border-b p-2 ">Oct 17,2019</td>
+            <td class="border-b p-2 ">Direct Visit</td>
+            <td class="border-b p-2 "><button class="no">No</button></td>
+            <td class="border-b p-2 ">2</td>
+            <!-- Add more table data as needed -->
+        </tr>
+
+
+        <!-- Add more rows as needed -->
+    </tbody>
+</table>
+    
+</main>
+
+    </div>
+</body>
+</html>
+
+
+

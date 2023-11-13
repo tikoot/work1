@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .yes {
+      background-color: #4fa954;
+      color: #ffffff;
+      border-radius: 0.25rem;
+      padding: 0 0.5rem ;
+      text-align: center;
+    }
+    .no{
+        background-color: #6b6b6b;
+        color: #ffffff;
+        border-radius: 0.25rem;
+        padding: 0 0.5rem ;
+        text-align: center;
+    }
+    .active{
+        color: #4788ba;
+    }
+    .navText{
+        color: #808689;
+    }
+  }
+  
+
